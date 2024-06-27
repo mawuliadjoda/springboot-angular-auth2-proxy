@@ -1,0 +1,21 @@
+replicaCount: 2
+
+image:
+  repository: adjodamawuli/resource-server
+  tag: "1.0.0"
+  pullPolicy: IfNotPresent
+
+service:
+  type: LoadBalancer
+  port: 8080
+
+ingress:
+  enabled: true
+  annotations: {}
+  hosts:
+    - host: resource-server.local
+      paths:
+        - /
+  tls: []
+
+resources: {}
