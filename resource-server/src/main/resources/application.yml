@@ -1,3 +1,7 @@
+server:
+  servlet:
+    context-path: /resource-server
+
 spring:
   application:
     name: resource-server
