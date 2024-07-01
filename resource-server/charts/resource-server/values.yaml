@@ -1,21 +1,21 @@
-replicaCount: 2
+name: resource-server
 
 image:
   repository: adjodamawuli/resource-server
-  tag: "1.0.0"
-  pullPolicy: IfNotPresent
+  tag: latest
 
 service:
-  type: LoadBalancer
   port: 8080
+
+springBoot:
+  contextPath: /resource-server
 
 ingress:
   enabled: true
   annotations: {}
   hosts:
-    - host: resource-server.local
-      paths:
-        - /
-  tls: []
-
-resources: {}
+    - host: adjoda.dev.com  # Remplacez par votre domaine
+  tls:
+    - hosts:
+        - adjoda.dev.com
+      secretName: adjoda-dev-com-tl
