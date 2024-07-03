@@ -27,3 +27,6 @@ helm install mychart resource-server-chart
 kubectl get pods
 kubectl get services
 
+--
+D:\dev\Java\git\springboot-angular-auth2-proxy\resource-server\resource-server-chart>helm install resource-server .
+D:\dev\Java\git\springboot-angular-auth2-proxy\resource-server\resource-server-chart>helm uninstall resource-server
