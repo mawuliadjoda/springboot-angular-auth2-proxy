@@ -21,4 +21,9 @@ kubectl -n default create token dashboard-admin-sa
 
 
 
+--
+helm create resource-server-chart
+helm install mychart resource-server-chart
+kubectl get pods
 kubectl get services
+
