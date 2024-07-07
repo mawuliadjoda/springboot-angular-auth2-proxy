@@ -68,3 +68,7 @@ NAMESPACE       NAME                                                     READY  
 default         resource-server-resource-server-chart-84db8ff756-7zsfg   1/1     Running     0          3s
 
     kubectl logs resource-server-resource-server-chart-84db8ff756-7zsfg
+
+# Important
+add this to c:\Windows\System32\Drivers\etc\hosts
+127.0.0.1 adjodamawuli.com
