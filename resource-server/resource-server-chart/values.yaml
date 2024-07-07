@@ -8,7 +8,7 @@ image:
   repository: adjodamawuli/resource-server
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
-  tag: "1.1.1"
+  tag: "latest"
 
 imagePullSecrets: []
 nameOverride: ""
@@ -40,7 +40,7 @@ securityContext: {}
   # runAsUser: 1000
 
 service:
-  type: NodePort
+  type: ClusterIP
   port: 8080
 
 ingress:
@@ -52,7 +52,7 @@ ingress:
   hosts:
     - host: adjodamawuli.com
       paths:
-        - path: /
+        - path: /resource-server
           pathType: Prefix
   tls: []
   #  - secretName: chart-example-tls
