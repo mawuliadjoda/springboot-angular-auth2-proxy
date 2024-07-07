@@ -1,6 +1,6 @@
-server:
-  servlet:
-    context-path: /resource-server
+#server:
+#  servlet:
+#    context-path: /resource-server
 
 spring:
   application:

@@ -22,10 +22,11 @@ public class SecurityConfig {
         http
                 .authorizeRequests(authorizeRequests ->
                         authorizeRequests
-                                .requestMatchers("/ping").permitAll()
-                                .requestMatchers("/admin").hasRole("ADMIN")
-                                .requestMatchers("/user").hasRole("USER")
-                                .anyRequest().authenticated()
+                                //.requestMatchers("/ping").permitAll()
+                                //.requestMatchers("/admin").hasRole("ADMIN")
+                                //.requestMatchers("/user").hasRole("USER")
+                                //.anyRequest().authenticated()
+                                .anyRequest().permitAll()
                 )
                 .oauth2ResourceServer(oauth2ResourceServer ->
                         oauth2ResourceServer
