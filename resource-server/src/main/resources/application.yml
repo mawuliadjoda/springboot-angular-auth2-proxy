@@ -1,6 +1,6 @@
-#server:
-#  servlet:
-#    context-path: /resource-server
+server:
+  servlet:
+    context-path: /resource-server
 
 spring:
   application:
@@ -11,4 +11,4 @@ spring:
     oauth2:
       resourceserver:
         jwt:
-          issuer-uri: "http://localhost:80/realms/master"
+          issuer-uri: "http://localhost:7080/realms/master"
